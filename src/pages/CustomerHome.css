@@ -1,0 +1,129 @@
+/* Page heading */
+h2, h3 {
+  text-align: center;
+  color: #0d6efd;
+  margin: 20px 0;
+}
+
+/* Error message */
+.error {
+  background-color: #ffd1d1;
+  color: #d8000c;
+  padding: 10px;
+  margin: 15px auto;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Card container */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 900px;
+}
+
+/* Form elements inside cards */
+.card label {
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card input, .card select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.card input:focus, .card select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Buttons */
+.card button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Grid for available cars */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Individual car cards */
+.grid .card {
+  text-align: center;
+  padding: 15px;
+}
+
+.grid .card h4 {
+  color: #0d6efd;
+  margin-bottom: 8px;
+}
+
+.grid .card p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+/* Booking message */
+.card p {
+  margin-top: 8px;
+  color: green;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+    margin: 10px 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+
+  .card input, .card select, .card button {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .card select {
+    font-size: 1rem;
+    padding: 14px 12px; /* easier tap */
+  }
+}

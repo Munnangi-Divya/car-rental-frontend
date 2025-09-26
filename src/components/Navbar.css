@@ -1,0 +1,93 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0d6efd;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Link and button styling */
+.nav-right a,
+.nav-right span,
+.nav-right button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #dc3545;
+  color: white;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-right {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: #0d6efd;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    gap: 10px;
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .nav-right a,
+  .nav-right button,
+  .nav-right span {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+}
+
+

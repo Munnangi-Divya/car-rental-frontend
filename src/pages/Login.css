@@ -1,0 +1,91 @@
+
+
+
+
+/* Center the card */
+.card {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.card h2 {
+  margin-bottom: 20px;
+  color: #0d6efd;
+}
+
+/* Error message */
+.error {
+  background-color: #ffd1d1;
+  color: #d8000c;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Form fields */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card label {
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+
+.card input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.card input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Submit button */
+.card button {
+  padding: 10px 15px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  .card {
+    margin: 40px 20px;
+    padding: 25px;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .card input, .card button {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+}
