@@ -1,5 +1,5 @@
 // central API helper (very small)
-const API_BASE = process.env.REACT_APP_API_BASE || 'https://car-rental-backend-1-e7w9.onrender.com/api';
+const API_BASE = process.env.REACT_APP_API_BASE || '/api';
 
 function authHeaders() {
   const token = localStorage.getItem('token');
