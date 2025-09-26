@@ -2,7 +2,7 @@ import React, { useState ,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
-const API = process.env.REACT_APP_API_BASE || 'https://car-rental-backend-1-e7w9.onrender.com/api';
+const API = process.env.REACT_APP_API_BASE || 'http://localhost:5000/api';
 
 export default function Login({ setUser }) {
   const [email, setEmail] = useState('');
