@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CustomerHome.css';
 
-const API = process.env.REACT_APP_API_BASE || 'https://car-rental-backend-1-e7w9.onrender.com/api';
+const API = process.env.REACT_APP_API_BASE || 'https://localhost:5000/api';
 
 export default function CustomerHome({ user }) {
   const [cities, setCities] = useState([]);
